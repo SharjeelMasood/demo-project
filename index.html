@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCart.pk</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- 🔹 TOP MINI BAR -->
+    <div class="top-menu">
+        <div class="container top-container">
+            <span>WELCOME TO MYCART.PK</span>
+            <span>|</span>
+            <a href="#">MY ACCOUNT</a>
+            <span>|</span>
+            <a href="#">LOG IN</a>
+        </div>
+    </div>
+
+    <!-- 🔹 HEADER -->
+    <header class="main-header">
+        <div class="container header-container">
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">mycart.pk</a>
+            </div>
+
+            <!-- Search -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <select>
+                    <option>All Categories</option>
+                    <option>Groceries</option>
+                    <option>Fresh & Dairy</option>
+                    <option>Beverages</option>
+                </select>
+                <button><i class="fas fa-search"></i></button>
+            </div>
+
+            <!-- Right -->
+            <div class="header-right">
+                <span><i class="fas fa-phone"></i> 021-111-000-444</span>
+                <a href="contact.html">CONTACT US</a>
+
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
+
+                <!-- Hamburger -->
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- 🔹 NAV MENU -->
+    <nav class="main-nav">
+        <ul class="nav-menu">
+            <li><a href="GROCERIES.html">GROCERIES</a></li>
+            <li><a href="Fresh & Dairy.html">FRESH & DAIRY</a></li>
+            <li><a href="beverages.html">BEVERAGES</a></li>
+            <li><a href="snacks.html">BAKERY & SNACKS</a></li>
+            <li><a href="baby.html">BABY & KIDS</a></li>
+            <li><a href="beauty-grooming.html">PERSONAL CARE</a></li>
+            <li><a href="home.html">HOME ESSENTIALS</a></li>
+        </ul>
+    </nav>
+
+    <!-- 🔹 BREADCRUMB (AUTO HIDE ON HOME) -->
+    <div class="breadcrumb" id="breadcrumb">
+        <a href="index.html">Home</a> &gt; <span>Fresh & Dairy</span>
+    </div>
+
+    <!-- 🔹 RUNNING NOTICE -->
+    <div class="marquee" id="marquee">
+        <p>Due to fluctuation of the prices, the market price prevailing at the time of delivery will be charged.</p>
+    </div>
+    <!-- hero section -->
+    <section class="hero">
+        <div class="hero-container">
+
+            <!-- LEFT BIG SLIDER -->
+            <div class="hero-slider">
+                <div class="slides">
+                    <img src="img/Nuby_slider_banner.jpg" class="slide active">
+                    <img src="img/Slider_Banner_2.jpg" class="slide">
+                    <img src="img/Nestle_slider_banner.jpg" class="slide">
+                </div>
+
+                <!-- Dots -->
+                <div class="dots">
+                    <span class="dot active" onclick="showSlide(0)"></span>
+                    <span class="dot" onclick="showSlide(1)"></span>
+                    <span class="dot" onclick="showSlide(2)"></span>
+                </div>
+            </div>
+
+            <!-- RIGHT SMALL BANNERS -->
+            <div class="hero-side">
+                <div class="side-box">
+                    <img src="img/Lipton_Right_Banner.jpg">
+                </div>
+                <div class="side-box">
+                    <img src="img/Beverages_Right_Banner2.jpg">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- catageroy section -->
+
+    <section class="categories">
+        <div class="categoriess-container">
+
+            <!-- CARD 1 -->
+            <a href="">
+                <div class="category-card">
+                    <img src="img/intpromo_home_d-block01_w04_rice_flour.png" alt="">
+                    <div class="overlay">
+                        <h3>RICE & FLOUR</h3>
+                    </div>
+                </div>
+            </a>
+
+
+            <!-- CARD 2 -->
+            <a href="">
+                <div class="category-card">
+                    <img src="img/intpromo_home_d-block01_w04_tea_coffee_2.png" alt="">
+                    <div class="overlay">
+                        <h3>BATH & BODY</h3>
+                    </div>
+                </div>
+            </a>
+
+
+            <!-- CARD 3 -->
+            <a href="">
+                <div class="category-card">
+                    <img src="img/intpromo_home_d-block01_w04_bath_body3.png" alt="">
+                    <div class="overlay">
+                        <h3>SALT, SPICES & INGREDIENT</h3>
+                    </div>
+                </div>
+            </a>
+
+            <!-- CARD 4 -->
+            <a href="">
+                <div class="category-card">
+                    <img src="img/intpromo_home_d-block01_w04_salt4.png" alt="">
+                    <div class="overlay">
+                        <h3>BREAKFAST FEASTS</h3>
+                    </div>
+                </div>
+            </a>
+
+
+            <!-- CARD 5 -->
+            <a href="">
+                <div class="category-card">
+                    <img src="img/intpromo_home_d-block01_w03_breakfast-5.png" alt="">
+                    <div class="overlay">
+                        <h3>KITCHEN & LAUNDRY</h3>
+                    </div>
+                </div>
+            </a>
+
+
+            <!-- CARD 6  -->
+            <a href="">
+                <div class="category-card">
+                    <img src="img/intpromo_home_d-block04_w26_kitchen-laundry_6.png" alt="">
+                    <div class="overlay">
+                        <h2>Your DailyEnergetic Dose!</h2>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- product section -->
+        <section>
+            <div class="heades-container">
+                <h2>TODAY'S PICK</h2>
+                <div class="center-line"></div>
+                <div class="navs-controls">
+                    <i class="fa-solid fa-chevron-left" onclick="slideLeft()"></i>
+                    <i class="fa-solid fa-chevron-right" onclick="slideRight()"></i>
+                </div>
+            </div>
+
+            <div class="slider-wrapper">
+                <div class="products-container" id="slider">
+
+                    <div class="products-card">
+                        <div class="img-holder">
+                            <img src="img/product 2.jpg" alt="Atta">
+                            <div class="hover-ui">
+                                <div class="qty-input">
+                                    <input type="text" value="0">
+                                    <div class="qty-btns"><button>▲</button><button>▼</button></div>
+                                </div>
+                                <button class="cart-icon-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                        <p class="p-name">Sunridge Fortified Regular Atta - 5kg</p>
+                        <p class="p-price">Rs. 865.00</p>
+                    </div>
+
+                    <div class="products-card">
+                        <div class="img-holder">
+                            <img src="img/product 3.jpg" alt="Milk">
+                            <div class="hover-ui">
+                                <div class="qty-input">
+                                    <input type="text" value="0">
+                                    <div class="qty-btns"><button>▲</button><button>▼</button></div>
+                                </div>
+                                <button class="cart-icon-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                        <p class="p-name">Nestle Everyday - 850gm</p>
+                        <p class="p-price">Rs. 1,835.00</p>
+                    </div>
+
+                    <div class="products-card">
+                        <div class="img-holder">
+                            <img src="img/product 4.jpg" alt="Margarine">
+                            <div class="hover-ui">
+                                <div class="qty-input">
+                                    <input type="text" value="0">
+                                    <div class="qty-btns"><button>▲</button><button>▼</button></div>
+                                </div>
+                                <button class="cart-icon-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                        <p class="p-name">Blue Band Margarine - 200gm</p>
+                        <p class="p-price">Rs. 360.00</p>
+                    </div>
+
+                    <div class="products-card">
+                        <div class="img-holder">
+                            <img src="img/product 1.png" alt="Spread">
+                            <div class="hover-ui">
+                                <div class="qty-input">
+                                    <input type="text" value="0">
+                                    <div class="qty-btns"><button>▲</button><button>▼</button></div>
+                                </div>
+                                <button class="cart-icon-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                        <p class="p-name">Young's Chicken Spread - 1Ltr</p>
+                        <p class="p-price">Rs. 1,295.00</p>
+                    </div>
+                    <div class="products-card">
+                        <div class="img-holder">
+                            <img src="img/product 5.png" alt="Spread">
+                            <div class="hover-ui">
+                                <div class="qty-input">
+                                    <input type="text" value="0">
+                                    <div class="qty-btns"><button>▲</button><button>▼</button></div>
+                                </div>
+                                <button class="cart-icon-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                        <p class="p-name">Young's Chicken Spread - 1Ltr</p>
+                        <p class="p-price">Rs. 1,295.00</p>
+                    </div>
+
+                    <div class="products-card">
+                        <div class="img-holder">
+                            <img src="img/product 6.jpg" alt="Sugar">
+                            <div class="hover-ui">
+                                <div class="qty-input">
+                                    <input type="text" value="0">
+                                    <div class="qty-btns"><button>▲</button><button>▼</button></div>
+                                </div>
+                                <button class="cart-icon-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                        <p class="p-name">Sugar - 5kg</p>
+                        <p class="p-price">Rs. 1,050.00</p>
+                    </div>
+
+                    <div class="products-card">
+                        <div class="img-holder">
+                            <img src="img/product 8.jpg" alt="Rice">
+                            <div class="hover-ui">
+                                <div class="qty-input">
+                                    <input type="text" value="0">
+                                    <div class="qty-btns"><button>▲</button><button>▼</button></div>
+                                </div>
+                                <button class="cart-icon-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                        <p class="p-name">Falak Premium Rice - 5kg</p>
+                        <p class="p-price">Rs. 2,200.00</p>
+                    </div>
+
+                    <div class="products-card">
+                        <div class="img-holder">
+                            <img src="img/product 7.jpg" alt="Rice">
+                            <div class="hover-ui">
+                                <div class="qty-input">
+                                    <input type="text" value="0">
+                                    <div class="qty-btns"><button>▲</button><button>▼</button></div>
+                                </div>
+                                <button class="cart-icon-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                        </div>
+                        <p class="p-name">Falak Premium Rice - 5kg</p>
+                        <p class="p-price">Rs. 2,200.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="ft-z-back-to-top" id="scrollTopBtn" onclick="scrollToTop()">
+            <i class="fa-solid fa-chevron-up"></i>
+        </div>
+        <footer class="ft-z-main-container">
+            <div class="ft-z-row">
+
+                 <div class="ft-z-col">
+                <ul class="ft-z-list aa" >
+                    <a href="About.html">
+                        <li><i class="fa-solid fa-play"></i> About Us</li>
+                    </a>
+                    <a href="Terms&conditions.html">
+                        <li><i class="fa-solid fa-play"></i> Terms & Conditions</li>
+                    </a>
+                    <a href="Privacy.html">
+                        <li><i class="fa-solid fa-play"></i> Privacy Policy</li>
+                    </a>
+                    <a href="FAQs.html">
+                        <li><i class="fa-solid fa-play"></i> FAQs</li>
+                    </a>
+                    <a href="Refunds.html">
+                        <li><i class="fa-solid fa-play"></i> Refunds and Exchange</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="ft-z-col">
+                <ul class="ft-z-list aa">
+                    <a href="Delivery.html">
+                        <li><i class="fa-solid fa-play"></i> Delivery</li>
+                    </a>
+                    <a href="Payment.html">
+                        <li><i class="fa-solid fa-play"></i> Payment Methods</li>
+                    </a>
+                    <a href="contact.html">
+                        <li><i class="fa-solid fa-play"></i> Feedback Form</li>
+                    </a>
+                    <a href="Productrequest.html">
+                        <li><i class="fa-solid fa-play"></i> Product Request</li>
+                    </a>
+                </ul>
+            </div>
+                <div class="ft-z-col">
+                    <h3 class="ft-z-title">Connect with us</h3>
+                    <div class="ft-z-social-icons">
+                        <a href="#" class="ft-z-fb"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="ft-z-tw"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="ft-z-ig"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="ft-z-li"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="ft-z-col">
+                    <h3 class="ft-z-title">Payment Methods</h3>
+                    <div class="ft-z-payment-grid">
+                        <img src="img/payment_method 1.png" alt="COD">
+
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+        <div class="ft-z-bottom-bar">
+            © 2016-2026 mycart.pk All Rights Reserved | Designed & Developed by <span>SharjeelMasood</span>
+        </div>
+
+
+        <script src="script.js"></script>
+</body>
+
+</html>

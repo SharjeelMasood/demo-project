@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FAQs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ffffff;
+            color: #333;
+        }
+
+        .faqs-wrapper {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .page-title {
+            font-size: 28px;
+            color: #f2b400;
+            margin-bottom: 30px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #e5e5e5;
+            margin-bottom: 10px;
+        }
+
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            outline: none;
+            text-align: left;
+            padding: 15px 0;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .faq-question::after {
+            content: "+";
+            position: absolute;
+            right: 0;
+            font-size: 18px;
+        }
+
+        .faq-question.active::after {
+            content: "-";
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-answer p {
+            font-size: 14px;
+            line-height: 1.7;
+            padding-bottom: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 🔹 TOP MINI BAR -->
+    <div class="top-menu">
+        <div class="container top-container">
+            <span>WELCOME TO MYCART.PK</span>
+            <span>|</span>
+            <a href="#">MY ACCOUNT</a>
+            <span>|</span>
+            <a href="#">LOG IN</a>
+        </div>
+    </div>
+
+    <!-- 🔹 HEADER -->
+    <header class="main-header">
+        <div class="container header-container">
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">mycart.pk</a>
+            </div>
+
+            <!-- Search -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <select>
+                    <option>All Categories</option>
+                    <option>Groceries</option>
+                    <option>Fresh & Dairy</option>
+                    <option>Beverages</option>
+                </select>
+                <button><i class="fas fa-search"></i></button>
+            </div>
+
+            <!-- Right -->
+            <div class="header-right">
+                <span><i class="fas fa-phone"></i> 021-111-000-444</span>
+                <a href="contact.html">CONTACT US</a>
+
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
+
+                <!-- Hamburger -->
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- 🔹 NAV MENU -->
+    <nav class="main-nav">
+        <ul class="nav-menu">
+            <li><a href="GROCERIES.html">GROCERIES</a></li>
+            <li><a href="Fresh & Dairy.html">FRESH & DAIRY</a></li>
+            <li><a href="beverages.html">BEVERAGES</a></li>
+            <li><a href="snacks.html">BAKERY & SNACKS</a></li>
+            <li><a href="baby.html">BABY & KIDS</a></li>
+            <li><a href="beauty-grooming.html">PERSONAL CARE</a></li>
+            <li><a href="home.html">HOME ESSENTIALS</a></li>
+        </ul>
+    </nav>
+
+    <!-- 🔹 BREADCRUMB (AUTO HIDE ON HOME) -->
+    <div class="breadcrumb" id="breadcrumb">
+        <a href="index.html">Home</a> &gt; <span>About us</span>
+    </div>
+
+    <!-- 🔹 RUNNING NOTICE -->
+    <div class="marquee" id="marquee">
+        <p>Due to fluctuation of the prices, the market price prevailing at the time of delivery will be charged.</p>
+    </div>
+    <div class="faqs-wrapper">
+
+        <h1 class="page-title">FAQs</h1>
+
+        <div class="faq-item">
+            <button class="faq-question">What is mycart.pk?</button>
+            <div class="faq-answer">
+                <p>
+                    mycart.pk is an online grocery and daily essentials store that allows customers
+                    to conveniently shop from home and get products delivered to their doorstep.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">How can I place an order?</button>
+            <div class="faq-answer">
+                <p>
+                    You can place an order by browsing products, adding them to your cart,
+                    and completing checkout after logging into your account.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Do I need an account to shop?</button>
+            <div class="faq-answer">
+                <p>
+                    Yes, creating an account helps us manage your orders, deliveries,
+                    and payment information securely.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">What payment methods are available?</button>
+            <div class="faq-answer">
+                <p>
+                    We accept Cash on Delivery, debit cards, credit cards,
+                    and selected online payment methods.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">How long does delivery take?</button>
+            <div class="faq-answer">
+                <p>
+                    Delivery time depends on your location and order volume,
+                    usually within the same day or next working day.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Can I cancel my order?</button>
+            <div class="faq-answer">
+                <p>
+                    Orders can be cancelled before dispatch. Once shipped,
+                    cancellation may not be possible.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">What if I receive a damaged product?</button>
+            <div class="faq-answer">
+                <p>
+                    If you receive a damaged or incorrect product, please contact our
+                    support team immediately for assistance or replacement.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Do you offer refunds?</button>
+            <div class="faq-answer">
+                <p>
+                    Refunds are processed according to our Refund & Exchange policy
+                    after verification of the issue.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Is my personal information secure?</button>
+            <div class="faq-answer">
+                <p>
+                    Yes, we use secure systems and industry-standard practices
+                    to protect your personal information.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="ft-z-main-container">
+        <div class="ft-z-row">
+
+             <div class="ft-z-col">
+                <ul class="ft-z-list aa" >
+                    <a href="About.html">
+                        <li><i class="fa-solid fa-play"></i> About Us</li>
+                    </a>
+                    <a href="Terms&conditions.html">
+                        <li><i class="fa-solid fa-play"></i> Terms & Conditions</li>
+                    </a>
+                    <a href="Privacy.html">
+                        <li><i class="fa-solid fa-play"></i> Privacy Policy</li>
+                    </a>
+                    <a href="FAQs.html">
+                        <li><i class="fa-solid fa-play"></i> FAQs</li>
+                    </a>
+                    <a href="Refunds.html">
+                        <li><i class="fa-solid fa-play"></i> Refunds and Exchange</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="ft-z-col">
+                <ul class="ft-z-list aa">
+                    <a href="Delivery.html">
+                        <li><i class="fa-solid fa-play"></i> Delivery</li>
+                    </a>
+                    <a href="Payment.html">
+                        <li><i class="fa-solid fa-play"></i> Payment Methods</li>
+                    </a>
+                    <a href="contact.html">
+                        <li><i class="fa-solid fa-play"></i> Feedback Form</li>
+                    </a>
+                    <a href="Productrequest.html">
+                        <li><i class="fa-solid fa-play"></i> Product Request</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="ft-z-col">
+                <h3 class="ft-z-title">Connect with us</h3>
+                <div class="ft-z-social-icons">
+                    <a href="#" class="ft-z-fb"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="ft-z-tw"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="ft-z-ig"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="ft-z-li"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="ft-z-col">
+                <h3 class="ft-z-title">Payment Methods</h3>
+                <div class="ft-z-payment-grid">
+                    <img src="img/payment_method 1.png" alt="COD">
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script>
+        // MOBILE MENU
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            navMenu.classList.toggle("show");
+        });
+
+        // HIDE BREADCRUMB & MARQUEE ON HOME
+        const path = window.location.pathname;
+        const breadcrumb = document.getElementById("breadcrumb");
+        const marquee = document.getElementById("marquee");
+
+        if (path === "/" || path.includes("index")) {
+            if (breadcrumb) breadcrumb.style.display = "none";
+            if (marquee) marquee.style.display = "none";
+        }
+
+        const questions = document.querySelectorAll(".faq-question");
+
+        questions.forEach(q => {
+            q.addEventListener("click", () => {
+                q.classList.toggle("active");
+                const answer = q.nextElementSibling;
+                answer.style.maxHeight
+                    ? answer.style.maxHeight = null
+                    : answer.style.maxHeight = answer.scrollHeight + "px";
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 🔹 TOP MINI BAR -->
+    <div class="top-menu">
+        <div class="container top-container">
+            <span>WELCOME TO MYCART.PK</span>
+            <span>|</span>
+            <a href="#">MY ACCOUNT</a>
+            <span>|</span>
+            <a href="#">LOG IN</a>
+        </div>
+    </div>
+
+    <!-- 🔹 HEADER -->
+    <header class="main-header">
+        <div class="container header-container">
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">mycart.pk</a>
+            </div>
+
+            <!-- Search -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <select>
+                    <option>Groceries</option>
+                    <option>Groceries</option>
+                    <option>Fresh & Dairy</option>
+                    <option>Beverages</option>
+                </select>
+                <button><i class="fas fa-search"></i></button>
+            </div>
+
+            <!-- Right -->
+            <div class="header-right">
+                <span><i class="fas fa-phone"></i> 021-111-000-444</span>
+                <a href="contact.html">CONTACT US</a>
+
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
+
+                <!-- Hamburger -->
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- 🔹 NAV MENU -->
+    <nav class="main-nav">
+        <ul class="nav-menu">
+            <li><a href="GROCERIES.html">GROCERIES</a></li>
+            <li><a href="Fresh & Dairy.html">FRESH & DAIRY</a></li>
+            <li><a href="beverages.html">BEVERAGES</a></li>
+            <li><a href="snacks.html">BAKERY & SNACKS</a></li>
+            <li><a href="baby.html">BABY & KIDS</a></li>
+            <li><a href="beauty-grooming.html">PERSONAL CARE</a></li>
+            <li><a href="home.html">HOME ESSENTIALS</a></li>
+        </ul>
+    </nav>
+
+    <!-- 🔹 BREADCRUMB (AUTO HIDE ON HOME) -->
+    <div class="breadcrumb" id="breadcrumb">
+        <a href="index.html">Home</a> &gt; <span>PERSONAL CARE</span>
+    </div>
+
+    <!-- 🔹 RUNNING NOTICE -->
+    <div class="marquee" id="marquee">
+        <p>Due to fluctuation of the prices, the market price prevailing at the time of delivery will be charged.</p>
+    </div>
+
+    <div class="v9-main-wrapper">
+        <aside class="v9-sidebar">
+            <div class="v9-side-box">
+                <div class="v9-side-head" onclick="toggleV9('groc')">GROCERIES <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div id="groc" class="v9-side-body active">
+                    <ul class="v9-side-list">
+                        <li><strong>RAMADAN Kareem</strong></li>
+                        <li>Oil & Ghee <span>+</span></li>
+                        <li>Rice & Flour <span>+</span></li>
+                        <li>Grains & Pulses <span>+</span></li>
+                        <li>Salt, Spices & Other Ingredients <span>+</span></li>
+                        <li>Sugar & Sweeteners <span>+</span></li>
+                        <li>Ketchup, Mayonnaise & Pickles <span>+</span></li>
+                        <li>Canned & Packaged Food <span>+</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="v9-side-box">
+                <div class="v9-side-head" onclick="toggleV9('brand')">BRAND <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div id="brand" class="v9-side-body">
+                    <ul class="v9-side-list">
+                        <li>Adam's (2)</li>
+                        <li>Al Ameera (1)</li>
+                        <li>AL-Khubz (9)</li>
+                        <li>Almarai (1)</li>
+                        <li>Alshifa (10)</li>
+                        <li>American Garden (40)</li>
+                        <li>Ashrafi (1)</li>
+                        <li>Asli Doodh (1)</li>
+                        <li>Bake Parlor (38)</li>
+                        <li>Barkat (6)</li>
+                        <li>Big Bird (15)</li>
+                        <li>Borges (10)</li>
+                        <li>Cadbury (1)</li>
+                        <li>Canderel (3)</li>
+                        <li>Canolive (4)</li>
+                        <li>Choco Bliss (9)</li>
+                        <li>Comelle (1)</li>
+                        <li>Coroli (2)</li>
+                        <li>Crown (1)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="v9-feat-card">
+                <div style="display:flex; justify-content:space-between; margin-bottom:10px; align-items:center;">
+                    <span style="font-size:12px; font-weight:bold;">FEATURED</span>
+                    <div style="color:#ffcc00; cursor:pointer;">
+                        <i class="fa-solid fa-chevron-left" onclick="slideV9('L')"></i>
+                        <i class="fa-solid fa-chevron-right" onclick="slideV9('R')"></i>
+                    </div>
+                </div>
+                <div class="v9-feat-container" id="v9Feat">
+                    <div class="v9-feat-group">
+                        <div class="v9-feat-item"><img src="img/Fearured 1.png">
+                            <div>
+                                <p style="font-size:11px">Falak Rice</p><b>Rs. 345</b>
+                            </div>
+                        </div>
+                        <div class="v9-feat-item"><img src="img/Fearured 2.jpg">
+                            <div>
+                                <p style="font-size:11px">Falak Rice</p><b>Rs. 345</b>
+                            </div>
+                        </div>
+                        <div class="v9-feat-item"><img src="img/Fearured 3.jpg">
+                            <div>
+                                <p style="font-size:11px">Falak Rice</p><b>Rs. 345</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="v9-feat-group">
+                        <div class="v9-feat-item"><img src="img/Fearured 4.jpg">
+                            <div>
+                                <p style="font-size:11px">Falak Rice</p><b>Rs. 345</b>
+                            </div>
+                        </div>
+                        <div class="v9-feat-item"><img src="img/Fearured 5.jpg">
+                            <div>
+                                <p style="font-size:11px">Falak Rice</p><b>Rs. 345</b>
+                            </div>
+                        </div>
+                        <div class="v9-feat-item"><img src="img/Fearured 6.jpg">
+                            <div>
+                                <p style="font-size:11px">Falak Rice</p><b>Rs. 345</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="v9-feat-group">
+                        <div class="v9-feat-item"><img src="img/Fearured 7.jpg">
+                            <div>
+                                <p style="font-size:11px">Falak Rice</p><b>Rs. 345</b>
+                            </div>
+                        </div>
+                        <div class="v9-feat-item"><img src="img/Fearured 8.jpg">
+                            <div>
+                                <p style="font-size:11px">Falak Rice</p><b>Rs. 345</b>
+                            </div>
+                        </div>
+                        <div class="v9-feat-item"><img src="img/Fearured 9.jpg">
+                            <div>
+                                <p style="font-size:11px">Falak Rice</p><b>Rs. 345</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="v9-feat-group">
+                        <div class="v9-feat-item"><img src="img/Fearured 10.png">
+                            <div>
+                                <p style="font-size:11px">Falak Rice</p><b>Rs. 345</b>
+                            </div>
+                        </div>
+                        <div class="v9-feat-item"><img src="img/Fearured 11.jpg">
+                            <div>
+                                <p style="font-size:11px">Falak Rice</p><b>Rs. 345</b>
+                            </div>
+                        </div>
+                        <div class="v9-feat-item"><img src="img/Fearured 12.jpg">
+                            <div>
+                                <p style="font-size:11px">Falak Rice</p><b>Rs. 345</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="v9-feat-group">
+                        <div class="v9-feat-item"><img src="img/Fearured 13.jpg">
+                            <div>
+                                <p style="font-size:11px">Falak Rice</p><b>Rs. 345</b>
+                            </div>
+                        </div>
+                        <div class="v9-feat-item"><img src="img/Fearured 14.jpg">
+                            <div>
+                                <p style="font-size:11px">Falak Rice</p><b>Rs. 345</b>
+                            </div>
+                        </div>
+                        <div class="v9-feat-item"><img src="img/Fearured 15.jpg">
+                            <div>
+                                <p style="font-size:11px">Falak Rice</p><b>Rs. 345</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="v9-feat-group">
+                        <div class="v9-feat-item"><img src="img/Fearured 5.jpg">
+                            <div>
+                                <p style="font-size:11px">Falak Rice</p><b>Rs. 345</b>
+                            </div>
+                        </div>
+                        <div class="v9-feat-item"><img src="img/Fearured 6.jpg">
+                            <div>
+                                <p style="font-size:11px">Falak Rice</p><b>Rs. 345</b>
+                            </div>
+                        </div>
+                        <div class="v9-feat-item"><img src="img/Fearured 7.jpg">
+                            <div>
+                                <p style="font-size:11px">Falak Rice</p><b>Rs. 345</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="v9-content">
+            <div class="v9-banner">
+                <img src="img/Header_Banner.jpg" alt="Banner">
+            </div>
+
+            <div class="v9-bar" id="top-pag"></div>
+            <div class="v9-grid" id="product-grid"></div>
+            <div class="v9-bar" id="bot-pag" style="margin-top:20px;"></div>
+        </main>
+    </div>
+    <footer class="ft-z-main-container">
+        <div class="ft-z-row">
+
+            <div class="ft-z-col">
+                <ul class="ft-z-list aa">
+                    <a href="About.html">
+                        <li><i class="fa-solid fa-play"></i> About Us</li>
+                    </a>
+                    <a href="Terms&conditions.html">
+                        <li><i class="fa-solid fa-play"></i> Terms & Conditions</li>
+                    </a>
+                    <a href="Privacy.html">
+                        <li><i class="fa-solid fa-play"></i> Privacy Policy</li>
+                    </a>
+                    <a href="FAQs.html">
+                        <li><i class="fa-solid fa-play"></i> FAQs</li>
+                    </a>
+                    <a href="Refunds.html">
+                        <li><i class="fa-solid fa-play"></i> Refunds and Exchange</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="ft-z-col">
+                <ul class="ft-z-list aa">
+                    <a href="Delivery.html">
+                        <li><i class="fa-solid fa-play"></i> Delivery</li>
+                    </a>
+                    <a href="Payment.html">
+                        <li><i class="fa-solid fa-play"></i> Payment Methods</li>
+                    </a>
+                    <a href="contact.html">
+                        <li><i class="fa-solid fa-play"></i> Feedback Form</li>
+                    </a>
+                    <a href="Productrequest.html">
+                        <li><i class="fa-solid fa-play"></i> Product Request</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="ft-z-col">
+                <h3 class="ft-z-title">Connect with us</h3>
+                <div class="ft-z-social-icons">
+                    <a href="#" class="ft-z-fb"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="ft-z-tw"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="ft-z-ig"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="ft-z-li"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="ft-z-col">
+                <h3 class="ft-z-title">Payment Methods</h3>
+                <div class="ft-z-payment-grid">
+                    <img src="img/payment_method 1.png" alt="COD">
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="ft-z-bottom-bar">
+        © 2016-2026 mycart.pk All Rights Reserved | Designed & Developed by <span>SharjeelMasood</span>
+    </div>
+
+    <script>
+        // DATA SECTION: Yahan har page ka 1 product hai. Aap copy-paste karke barha sakte hain.
+        const allProducts = {
+            1: [{ name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/beauty 1.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/beauty 2.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/beauty 3.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/beauty 4.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/beauty 5.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/beauty 6.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/beauty 8.png" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/beauty 9.jpg" },
+            ],
+            2: [{ name: "Oil 1Ltr - Page 2", price: "Rs. 600", img: "img/beauty 10.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/beauty 11.png" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/beauty 12.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 4.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 5.png" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 6.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 7.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 8.jpg" },
+            ],
+            3: [{ name: "Rice 5kg - Page 3", price: "Rs. 2200", img: "img/product 1.png" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 2.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 3.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 4.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 5.png" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 6.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 7.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 8.jpg" },
+
+            ],
+            4: [{ name: "Tea 450g - Page 4", price: "Rs. 900", img: "img/product 1.png" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 2.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 3.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 4.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 5.png" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 6.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 7.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 8.jpg" },
+            ],
+            5: [{ name: "Milk 1Ltr - Page 5", price: "Rs. 280", img: "img/product 1.png" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 2.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 3.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 4.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 5.png" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 6.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 7.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 8.jpg" },
+            ],
+            6: [{ name: "Soap - Page 6", price: "Rs. 110", img: "img/product 1.png" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 2.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 3.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 4.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 5.png" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 6.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 7.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 8.jpg" },
+            ],
+            7: [{ name: "Salt - Page 7", price: "Rs. 60", img: "img/product 1.png" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 2.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 3.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 4.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 5.png" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 6.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 7.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 8.jpg" },
+            ],
+            8: [{ name: "Flour 10kg - Page 8", price: "Rs. 1400", img: "img/product 1.png" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 2.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 3.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 4.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 5.png" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 6.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 7.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 8.jpg" },
+            ],
+            9: [{ name: "Ghee 1kg - Page 9", price: "Rs. 610", img: "img/product 1.png" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 2.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 3.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 4.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 5.png" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 6.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 7.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 8.jpg" },
+            ],
+            10: [{ name: "Lentils - Page 10", price: "Rs. 300", img: "img/product 1.png" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 2.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 3.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 4.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 5.png" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 6.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 7.jpg" },
+            { name: "Sugar 1kg - Page 1", price: "Rs. 150", img: "img/product 8.jpg" },
+            ]
+        };
+
+        let curPage = 1;
+        const totalPages = 10;
+
+        function toggleV9(id) { document.getElementById(id).classList.toggle('active'); }
+        function slideV9(dir) { document.getElementById('v9Feat').scrollLeft += (dir === 'R' ? 270 : -270); }
+
+        function renderPagination() {
+            const containers = [document.getElementById('top-pag'), document.getElementById('bot-pag')];
+            containers.forEach(bar => {
+                let html = `<div>Sort By: <select><option>Best Sellers</option>
+                <option>Best Sellers</option>
+                <option>Best Sellers</option>
+                <option>Best Sellers</option></select></div>`;
+                html += `<div class="v9-pag-wrap">`;
+
+                // Back Arrow
+                html += `<div class="v9-p-btn ${curPage === 1 ? 'disabled' : ''}" onclick="goToV9(${curPage - 1})"><i class="fa-solid fa-chevron-left"></i></div>`;
+
+                for (let i = 1; i <= totalPages; i++) {
+                    if (window.innerWidth < 600 && i > 1 && i < totalPages && Math.abs(i - curPage) > 1) {
+                        if (i === 2 || i === totalPages - 1) html += `<span style="padding:0 3px">...</span>`;
+                        continue;
+                    }
+                    html += `<div class="v9-p-btn ${i === curPage ? 'active' : ''}" onclick="goToV9(${i})">${i}</div>`;
+                }
+
+                // Next Arrow
+                html += `<div class="v9-p-btn ${curPage === totalPages ? 'disabled' : ''}" onclick="goToV9(${curPage + 1})"><i class="fa-solid fa-chevron-right"></i></div>`;
+                html += `</div>`;
+                bar.innerHTML = html;
+            });
+        }
+
+        function renderGrid() {
+            const grid = document.getElementById('product-grid');
+            grid.innerHTML = "";
+            const items = allProducts[curPage] || [];
+
+            items.forEach(p => {
+                grid.innerHTML += `
+                <div class="v9-card">
+                    <img src="${p.img}" class="v9-p-img">
+                    <p style="font-size:12px; color:#666; height:34px; overflow:hidden;">${p.name}</p>
+                    <p style="font-weight:bold; margin:10px 0;">${p.price}</p>
+                    <div style="font-size:11px; margin-bottom:10px;">Qty: <input type="text" value="1" style="width:30px; text-align:center;"></div>
+                    <button class="v9-cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+                </div>`;
+            });
+        }
+
+        function goToV9(p) {
+            if (p < 1 || p > totalPages) return;
+            curPage = p;
+            renderPagination();
+            renderGrid();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Init
+        renderPagination();
+        renderGrid();
+        window.addEventListener('resize', renderPagination);
+        // MOBILE MENU
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            navMenu.classList.toggle("show");
+        });
+
+        // HIDE BREADCRUMB & MARQUEE ON HOME
+        const path = window.location.pathname;
+        const breadcrumb = document.getElementById("breadcrumb");
+        const marquee = document.getElementById("marquee");
+
+        if (path === "/" || path.includes("index")) {
+            if (breadcrumb) breadcrumb.style.display = "none";
+            if (marquee) marquee.style.display = "none";
+        }
+        // To the top
+        // Button ko show/hide karne ka logic
+        const topBtn = document.getElementById("scrollTopBtn");
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                topBtn.classList.add("show-btn");
+            } else {
+                topBtn.classList.remove("show-btn");
+            }
+        };
+
+        // Smooth scroll to top function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>
